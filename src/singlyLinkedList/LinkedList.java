@@ -1,7 +1,7 @@
 package singlyLinkedList;/*
  * Author Name: Raj Kumar
  * IDE: IntelliJ IDEA Ultimate Edition
- * JDK: 18 version
+ * JDK: 19 version
  * Date: 20-May-22
  */
 
@@ -61,7 +61,7 @@ public class LinkedList {
         sll.display();
 
         // search element in linkedList
-//        System.out.println("Data found");
+//        System.out.println("Searching Element");
         if (sll.searchElement(99)) {
             System.out.println("Element is founded");
         } else {
@@ -75,6 +75,7 @@ public class LinkedList {
 
     }
 
+    // reverse linkedList
     public Node reverse(Node head) {
         if (head == null) {
             return head;
@@ -103,6 +104,8 @@ public class LinkedList {
         return false;
     }
 
+
+    // deleteGivenPosition of linkedList
     public void deleteGivenPosition(int pos) {
         if (pos == 1) {
             head = head.next;
@@ -119,6 +122,7 @@ public class LinkedList {
 
     }
 
+    // deleteLast element in linkedList
     public Node deleteLast() {
         if (head == null || head.next == null) {
             return head;
@@ -134,6 +138,7 @@ public class LinkedList {
 
     }
 
+    // addGivenPosition in linkedList
     private void addGivenPosition(int i, int new_data) {
         Node node = new Node(new_data);
         if (head == null) {
@@ -164,6 +169,7 @@ public class LinkedList {
 
     }
 
+    // find length of linkedList
     public int length() {
         if (head == null) {
             return 0;
@@ -177,12 +183,14 @@ public class LinkedList {
         return count;
     }
 
+    // addFirst element in linkedList
     public void insertFirst(int new_data) {
         Node new_Node = new Node(new_data);
         new_Node.next = head;
         head = new_Node;
     }
 
+    // deleteFirst element in linkedList
     public Node deleteFirst() {
 //        Node newNode = new Node(element);
         if (head == null) {
@@ -194,6 +202,7 @@ public class LinkedList {
         return temp;
     }
 
+    // addLast element in linkedList
     public void addLast(int element) {
         Node new_Node = new Node(element);
         if (head == null) {
@@ -208,6 +217,7 @@ public class LinkedList {
         }
     }
 
+    // addAfterGivenNode in linkedList
     public void addAfterGivenNode(Node givenNode, int new_data) {
         Node new_node = new Node(new_data);
         if (givenNode == null) {
@@ -221,6 +231,7 @@ public class LinkedList {
 
     }
 
+    // create Node class with constructor
     private static class Node {
         private int data;
         private Node next;
