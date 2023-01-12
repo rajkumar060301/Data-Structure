@@ -1,5 +1,4 @@
 package array;
-
 /*
  * Author Name: Raj Kumar
  * IDE: IntelliJ IDEA Ultimate Edition
