@@ -6,5 +6,6 @@
  */public class Faltu {
     public static void main(String[] args) {
         System.out.println("Hii Raj Kumar");
+        System.out.println(75 + -85 + 65 / 91);
     }
 }
