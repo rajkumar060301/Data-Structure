@@ -9,5 +9,6 @@ package tree;
     public static void main(String[] args) {
         Tree tree = new Tree();
         System.out.println("Hello Tree Data Structure");
+        System.out.println("In this program we write all tree data structure");
     }
 }
